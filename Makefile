@@ -1,4 +1,4 @@
 install:
 	npm ci
-brain-games: start-games
+brain-games:
 	node bin/brain-games.js
