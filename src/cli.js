@@ -1,4 +1,3 @@
-/* eslint-disable linebreak-style */
 import readLineSync from 'readline-sync';
 
 export default () => {
