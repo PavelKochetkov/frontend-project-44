@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import readLineSync from 'readline-sync';
 import getRandomNumber from '../utilities.js';
+import greetingsUser from '../index.js';
 
 const description = 'Answer "yes" if the number is even, otherwise answer "no".';
 const minNumber = 0;
@@ -11,6 +12,7 @@ const isEvenOrOdd = (number) => {
 }
 
 export default () => {
+    const nameUser = greetingsUser();
     console.log(description);
     for (let i = 1; i <= numberOfAttempts; i += 1) {
         const number = getRandomNumber(minNumber, maxNumber);
@@ -22,9 +24,9 @@ export default () => {
         } 
         if (answerUser !== correctAnswer) {
             console.log(`${answerUser} is wrong answer ;(. Correct answer was ${correctAnswer}.
-            Let's try again!`);
+            Let's try again, ${nameUser}!`);
             return;
         }
     };
-    console.log('Congratulations!');
+    console.log(`Congratulations, ${nameUser}!`);
 };
