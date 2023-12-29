@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import getRandomNumber from '../utilities.js';
+import { getRandomNumber } from '../utilities.js';
 import runGameRound from '../index.js';
 
 const description = 'Answer "yes" if the number is even, otherwise answer "no".';

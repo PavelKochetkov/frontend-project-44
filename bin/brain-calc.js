@@ -1,2 +1,4 @@
 #!/usr/bin/env node
-console.log('Calculated')
+import run_calc from '../src/games/brain-calc.js';
+
+run_calc();
