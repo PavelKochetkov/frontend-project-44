@@ -5,7 +5,7 @@ import { getRandomNumber, getRandomIndex } from '../utilities.js';
 const description = 'What is the result of the expression?';
 const operators = ['+', '-', '*'];
 const minNumber = 0;
-const maxNumber = 10;
+const maxNumber = 50;
 
 const generateGameRound = () => {
     const index = getRandomIndex(operators);
