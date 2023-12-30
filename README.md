@@ -35,8 +35,14 @@ brain-even
 
 [![asciicast](https://asciinema.org/a/gf1HHhqweXBZ00myyUpIA5gvs.svg)](https://asciinema.org/a/gf1HHhqweXBZ00myyUpIA5gvs)
 
+## Игра: "НОД"
+### Описание игры:
+Пользователю показывается два случайных числа, например, 25 50. Пользователь должен вычислить и ввести наибольший общий делитель этих чисел.
+### Запуск игры: __"brain-gcd"__
+
+[![asciicast](https://asciinema.org/a/Wplb8fBAhZG8XOVDiuANsQDSl.svg)](https://asciinema.org/a/Wplb8fBAhZG8XOVDiuANsQDSl)
+
 ### Future
 
 1. Прогрессия. Поиск пропущенных чисел в последовательности чисел.
-2. Определение наибольшего общего делителя.
-3. Определение простого числа.
+2. Определение простого числа.
