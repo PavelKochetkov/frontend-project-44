@@ -13,32 +13,25 @@ npm i
 ```
 npm link
 ```
-## Инструкция по запуску:
-
-Запуск игры "Проверка на чётность"
-
-```
-brain-even
-```
 
 ## Игра: "Проверка на четность"
 ### Описание игры:
 Пользователю показывается случайное число. Нужно ответить yes, если число чётное, или no — если нечётное.
-### Запуск игры: __"brain-even"__
+### Запуск игры: _brain-even_
 
 [![asciicast](https://asciinema.org/a/NBWUbsSvYeJBP6O0aKYTavSKf.svg)](https://asciinema.org/a/NBWUbsSvYeJBP6O0aKYTavSKf)
 
 ## Игра: "Калькулятор"
 ### Описание игры:
 Пользователю показывается случайное математическое выражение, например 35 + 16, которое нужно вычислить и записать правильный ответ.
-### Запуск игры: __"brain-calc"__
+### Запуск игры: _brain-calc_
 
 [![asciicast](https://asciinema.org/a/gf1HHhqweXBZ00myyUpIA5gvs.svg)](https://asciinema.org/a/gf1HHhqweXBZ00myyUpIA5gvs)
 
 ## Игра: "НОД"
 ### Описание игры:
 Пользователю показывается два случайных числа, например, 25 50. Пользователь должен вычислить и ввести наибольший общий делитель этих чисел.
-### Запуск игры: __"brain-gcd"__
+### Запуск игры: _brain-gcd_
 
 [![asciicast](https://asciinema.org/a/Wplb8fBAhZG8XOVDiuANsQDSl.svg)](https://asciinema.org/a/Wplb8fBAhZG8XOVDiuANsQDSl)
 
