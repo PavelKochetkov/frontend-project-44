@@ -35,7 +35,13 @@ npm link
 
 [![asciicast](https://asciinema.org/a/Wplb8fBAhZG8XOVDiuANsQDSl.svg)](https://asciinema.org/a/Wplb8fBAhZG8XOVDiuANsQDSl)
 
+## Игра: "Арифметическая прогрессия"
+### Описание игры:
+Пользователю показывается ряд чисел, образующий арифметическую прогрессию. Одно из чисел прогрессии скрыто. Необходимо определить это число.
+### Запуск игры: _brain-progression_
+
+[![asciicast](https://asciinema.org/a/uFXyz2RETrndoxAlSRTKcgXjy.svg)](https://asciinema.org/a/uFXyz2RETrndoxAlSRTKcgXjy)
+
 ### Future
 
-1. Прогрессия. Поиск пропущенных чисел в последовательности чисел.
-2. Определение простого числа.
+Определение простого числа.
