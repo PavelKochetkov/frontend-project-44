@@ -42,10 +42,10 @@ npm link
 
 [![asciicast](https://asciinema.org/a/uFXyz2RETrndoxAlSRTKcgXjy.svg)](https://asciinema.org/a/uFXyz2RETrndoxAlSRTKcgXjy)
 
-## Игра: "Простое число"
+## Игра: "Простое ли число?"
 ### Описание игры:
 Пользователю показывается случайное число. Нужно ответить yes, если число простое, или no — если непростое. 
-_Подсказка_: Простое число — это натуральное число больше 1, у которого есть всего два делителя: единица и само число.
+__Подсказка__: _Простое число_ — это натуральное число больше 1, у которого есть всего два делителя: единица и само число.
 ### Запуск игры: _brain-prime_
 
 [![asciicast](https://asciinema.org/a/JOV7nuq3W8WPmPxZuvV9NXfXp.svg)](https://asciinema.org/a/JOV7nuq3W8WPmPxZuvV9NXfXp)
