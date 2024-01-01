@@ -1,6 +1,6 @@
 # Проект "Игры разума":
 [![Actions Status](https://github.com/PavelKochetkov/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/PavelKochetkov/frontend-project-44/actions)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/63a77917e871f15fe1d7/test_coverage)](https://codeclimate.com/github/PavelKochetkov/frontend-project-44/test_coverage)
+[![Maintainability](https://api.codeclimate.com/v1/badges/63a77917e871f15fe1d7/maintainability)](https://codeclimate.com/github/PavelKochetkov/frontend-project-44/maintainability)
 
 ## Описание проекта
 __"Игры разума":__ набор из пяти консольных игр для тренировки вашего мозга. Каждая игра задает вопросы, на которые нужно дать правильные ответы. После трех правильных ответов считается, что игра пройдена. Неправильные ответы завершают игру и предлагается пройти ее заново.
