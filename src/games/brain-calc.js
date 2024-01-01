@@ -11,7 +11,7 @@ const generateGameRound = () => {
     const index = getRandomIndex(operators);
     const numberOne = getRandomNumber(minNumber, maxNumber);
     const numberTwo = getRandomNumber(minNumber, maxNumber);
-    const question = `${numberOne}${operators[index]}${numberTwo}`;
+    const question = `${numberOne} ${operators[index]} ${numberTwo}`;
     let correctAnswer = 0;
     switch (operators[index]) {
         case '+':
