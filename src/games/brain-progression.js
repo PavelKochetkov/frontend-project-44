@@ -1,6 +1,5 @@
-#!/usr/bin/env node
 import { getRandomNumber, getRandomIndex } from '../utilities.js';
-import runGameRound from '../index.js';
+import runGame from '../index.js';
 
 const description = 'What number is missing in the progression?';
 const minNumber = 5;
@@ -24,11 +23,11 @@ const generateGameRound = () => {
   const searchElement = progression[index];
   progression[index] = '..';
   const question = `${progression.join(' ')}`;
-  const correctAnswer = searchElement.toString();
+  const correctAnswer = String(searchElement);
 
   return [question, correctAnswer];
 };
 
 export default () => {
-  runGameRound(description, generateGameRound);
+  runGame(description, generateGameRound);
 };

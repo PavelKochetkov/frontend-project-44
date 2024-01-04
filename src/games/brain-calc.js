@@ -1,5 +1,4 @@
-#!/usr/bin/env node
-import runGameRound from '../index.js';
+import runGame from '../index.js';
 import { getRandomNumber, getRandomIndex } from '../utilities.js';
 
 const description = 'What is the result of the expression?';
@@ -7,28 +6,36 @@ const operators = ['+', '-', '*'];
 const minNumber = 0;
 const maxNumber = 50;
 
-const generateGameRound = () => {
-  const index = getRandomIndex(operators);
-  const numberOne = getRandomNumber(minNumber, maxNumber);
-  const numberTwo = getRandomNumber(minNumber, maxNumber);
-  const question = `${numberOne} ${operators[index]} ${numberTwo}`;
-  let correctAnswer = 0;
-  // eslint-disable-next-line default-case
-  switch (operators[index]) {
+const calculateValue = (number1, number2, operator) => {
+  let result = 0;
+  switch (operator) {
     case '+':
-      correctAnswer = (numberOne + numberTwo).toString();
+      result = number1 + number2;
       break;
     case '-':
-      correctAnswer = (numberOne - numberTwo).toString();
+      result = number1 - number2;
       break;
     case '*':
-      correctAnswer = (numberOne * numberTwo).toString();
+      result = number1 * number2;
       break;
+    default:
+      throw new Error(`missing calculation for operator: '${operator}'`);
   }
+
+  return result;
+};
+
+const generateGameRound = () => {
+  const index = getRandomIndex(operators);
+  const operator = operators[index];
+  const number1 = getRandomNumber(minNumber, maxNumber);
+  const number2 = getRandomNumber(minNumber, maxNumber);
+  const question = `${number1} ${operators[index]} ${number2}`;
+  const correctAnswer = String(calculateValue(number1, number2, operator));
 
   return [question, correctAnswer];
 };
 
 export default () => {
-  runGameRound(description, generateGameRound);
+  runGame(description, generateGameRound);
 };

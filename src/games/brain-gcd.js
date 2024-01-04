@@ -1,13 +1,13 @@
-#!/usr/bin/env node
-/* eslint-disable no-param-reassign */
 import { getRandomNumber } from '../utilities.js';
-import runGameRound from '../index.js';
+import runGame from '../index.js';
 
 const description = 'Find the greatest common divisor of given numbers.';
 const minNumber = 1;
 const maxNumber = 100;
 
-const getRemainderOfDivision = (num1, num2) => {
+const getGcd = (number1, number2) => {
+  let num1 = number1;
+  let num2 = number2;
   while (num1 !== 0 && num2 !== 0) {
     if (num1 > num2) {
       num1 %= num2;
@@ -20,14 +20,14 @@ const getRemainderOfDivision = (num1, num2) => {
 };
 
 const generateGameRound = () => {
-  const numberOne = getRandomNumber(minNumber, maxNumber);
-  const numberTwo = getRandomNumber(minNumber, maxNumber);
-  const question = `${numberOne} ${numberTwo}`;
-  const correctAnswer = getRemainderOfDivision(numberOne, numberTwo).toString();
+  const number1 = getRandomNumber(minNumber, maxNumber);
+  const number2 = getRandomNumber(minNumber, maxNumber);
+  const question = `${number1} ${number2}`;
+  const correctAnswer = String(getGcd(number1, number2));
 
   return [question, correctAnswer];
 };
 
 export default () => {
-  runGameRound(description, generateGameRound);
+  runGame(description, generateGameRound);
 };
